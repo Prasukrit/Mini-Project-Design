@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="css/customize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Optional theme -->
+
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/sticky-footer.css">
+    <link rel="stylesheet" type="text/css" href="css/cart.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--Dropdown-->
+    <script type="text/javascript"></script>
+    <style type="text/css">
+        .jumbotron{
+            background: url("image/bg.png");
+        }
+        table{
+            font-size: 16px;
+        }
+        table tr td{
+            padding: 10px 10px 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--NAV-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" width="20" height="20" src="http://dai-projects.googlecode.com/svn/tags/6/Resource/book-icon.png"></a>
+                    <a class="navbar-brand" href="#">Book store</a>
+                </div>
+
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            Categories
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="">สินค้าทั้งหมด</a>
+                            </li>
+                            <li>
+                                <a href="">สินค้าใหม่</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li >
+                                <a>สินค้าขายดี</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="">สินค้าขายดีรายวัน</a>
+                            </li>
+                            <li>
+                                <a href="">สินค้าขายดี 7 วัน</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li >
+                                <a href="">หนังสือ</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="">การ์ตูน</a>
+                            </li>
+                            <li>
+                                <a href="">กีฬา</a>
+                            </li>
+                            <li>
+                                <a href="">สุขภาพ</a>
+                            </li>
+                            <li>
+                                <a href="">นวนิยาย</a>
+                            </li>
+                            <li>
+                                <a href="">ท่องเที่ยว</a>
+                            </li>
+                            <li>
+                                <a href="">การศึกษา</a>
+                            </li>
+                            <li>
+                                <a href="">คอมพิวเตอร์</a>
+                            </li>
+                            <li>
+                                <a href="">ภาษาต่างประเทศ</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#about">How to order</a>
+                    </li>
+                    <li>
+                        <a href="#about">Payment</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            About
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+                <!--Cart-->
+                <div class=" navbar-form navbar-right cart">
+                    <a href="">
+                        <img src="image/cart.png"></a>
+                    <span >29 ชิ้น</span>
+                </div>
+                <!--/Cart-->
+                <!--Search-->
+                <form class="navbar-form navbar-right ">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                        </span>
+                    </div>
+                    <!-- /input-group --> </form>
+                <!--/Search--> </div>
+            <!--/.nav-collapse --> </div>
+
+    </nav>
+    <!--Promo-->
+    <div class="jumbotron" >
+        <div class="container">
+            <h1>Book shopping</h1>
+            <p>โปรโมชั่นลดกระหน่ำช่วงสงกรานต์ 13-15 เมษายน เท่านั้น!!</p>
+        </div>
+    </div>
+    <!--Container-->
+    <div class="container box-shadow" style="background-color: #eee;padding-top:20px;">
+        <div class="row">
+            <!--Left-->
+            <div class="col-md-3 box-padding">
+                <!--Login-->
+                <h2>Login/Register</h2>
+                <hr>
+                <div class="box-padding">
+                    <div style="text-align:center;"><img src="image/person.png" alt="Profile" class="img-circle" style="width:100px;height:100px;">
+                    <p ><a href="">Nameee</a></p></div>
+                    <br>
+                    <div align="center">
+                    <button class="btn btn-default" type="submit" >Edit profile</button>
+                    <button class="btn btn-default" type="submit" >Logout</button>
+                    </div>
+                    
+                </div>
+                <!--
+                <form>
+                    <div class="form-group form-signin">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"></div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" class="form-control" id="" placeholder="Password"></div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="remember-me">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Login</button>
+                    <button class="btn btn-default" type="submit" >Sign up</button>
+                </form>
+                -->
+                <!--/Login-->
+
+                <!--Category-->
+                <h2>Category</h2>
+                <hr>
+                <div class="nav nav-pills nav-stacked">
+                    <ul>
+                        <li>
+                            <a href="">สินค้าทั้งหมด</a>
+                        </li>
+                        <li>
+                            <a href="">สินค้าใหม่</a>
+                        </li>
+                        <li>
+                            <a href="">สินค้าขายดี</a>
+                            <ul>
+                                <li>
+                                    <a href="">สินค้าขายดีรายวัน</a>
+                                </li>
+                                <li>
+                                    <a href="">สินค้าขายดี 7 วัน</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">หนังสือ</a>
+                            <ul>
+                                <li>
+                                    <a href="">การ์ตูน</a>
+                                </li>
+                                <li>
+                                    <a href="">กีฬา</a>
+                                </li>
+                                <li>
+                                    <a href="">สุขภาพ</a>
+                                </li>
+                                <li>
+                                    <a href="">นวนิยาย</a>
+                                </li>
+                                <li>
+                                    <a href="">ท่องเที่ยว</a>
+                                </li>
+                                <li>
+                                    <a href="">การศึกษา</a>
+                                </li>
+                                <li>
+                                    <a href="">คอมพิวเตอร์</a>
+                                </li>
+                                <li>
+                                    <a href="">ภาษาต่างประเทศ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">อุปกรณ์/เครื่องเขียน</a>
+                            <ul>
+                                <li>
+                                    <a href="">เร็วๆนี้</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--Left-->
+            <!--Right-->
+            <div class="col-md-9 masthead">
+                <!--Sitemap-->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <ol class="breadcrumb">
+                            <li>
+                                <a href="#">หน้าหลัก</a>
+                            </li>
+                            <li>
+                                <a href="#">ประเภทสินค้า</a>
+                            </li>
+                            <li class="active">สินค้า</li>
+                        </ol>
+
+                    </div>
+                </div>
+                <!--Content-->
+                <div class=" panel panel-default col-md-12">
+                    <h2>Name of Product</h2>
+                    <hr>
+
+                    <!--Book content-->
+                    <div class="panel-body" style="padding-top:30px;">
+                        <div class="col-sd-4 col-md-3">
+                            <a href="#" class="thumbnail">
+                                <img src="image/book.png" alt="Product"></a>
+                            <button type="button" class="btn btn-primary" style="width:100%">Add to cart</button>
+                        </div>
+                        <div class="col-sd-8 col-md-9">
+                            <h3>199 Bath</h3>
+
+                            <h3>รายละเอียด</h3>
+                            <table>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9786160400256 (ปกอ่อน) 96 หน้า</td>
+                                </tr>
+                                <tr>
+                                    <td>ขนาดรูปเล่ม</td>
+                                    <td>61 x 90 x 60 มม.</td>
+                                </tr>
+                                <tr>
+                                    <td>น้ำหนัก</td>
+                                    <td>20 กรัม</td>
+                                </tr>
+                                <tr>
+                                    <td>เนื้อในพิมพ์</td>
+                                    <td>ขาวดำ</td>
+                                </tr>
+                                <tr>
+                                    <td>ชนิดกระดาษ</td>
+                                    <td>กระดาษปอนด์</td>
+                                </tr>
+                                <tr>
+                                    <td>สำนักพิมพ์</td>
+                                    <td>นานมีบุ๊คส์พับลิเคชั่นส์</td>
+                                </tr>
+                            </table>
+                            <h3>เนื้อหา</h3>
+                            <div>
+                                ABSDFSDGSDGDGHDFGHDHFTHDHD FHDFHDH TDHDRGDGDR d fgdrg  g rdgdfgdgdhdf dfgdgdgd
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Book content-->
+                    
+<!--Comment-->
+                    <div class="panel-body ">
+                        <div>
+                            <h3>บทวิจารณ์</h3>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <div class="box-padding col-md-3">
+
+                                <p class="lead">ระดับคุณภาพ</p>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5" checked>ดีเยี่ยม</label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">ดี</label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">ปานกลาง</label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">พอใช้</label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">ปรับปรุง</label>
+                                </div>
+                            </div>
+                            <div class="box-padding col-md-7 " >
+                                <div class="well" align="center">
+                                    <br><br>
+                                    <p>กรุณา login ก่อนทำการวิจารณ์สินค้า</p>
+                                    <button class="btn btn-default" type="submit" >Login</button>   
+                                    <br><br><br>
+                                </div>
+                                <!--
+                                <label>
+                                    รายระเอียด
+                                    <textarea class="form-control" rows="3" name="desReview" id="desReview" placeholder="รายละเอียดบทวิจารณ์"></textarea>
+                                </label>
+                                <br>
+                                <label>
+                                    ชื่อ
+                                    <input class="form-control" type="text" id="desReview" placeholder="ชื่อของคุณ" name="nameReview" ></label>
+                                <br>
+                                <label>
+                                    หัวข้อ
+                                    <input class="form-control" type="text" id="desReview" placeholder="ชื่อหัวข้อ" name="titleReview"></label>
+                                <br>
+                                <input class="btn btn-default" type="submit" value="ส่งบทวิจารณ์"></div>
+                                -->
+                            </div>
+                        </div>
+                    <!--/Comment-->
+                    <!--Review-->
+                    <div class="panel-body">
+                        <div>
+                            <h3>ความคิดเห็น(0)</h3>
+                            <hr>
+                        </div>
+                        <!--Box comment-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">ความเห็นที่ 1</h3>
+                            </div>
+                            <div class="panel-body">
+                                สนุกจุงเบยยยยยยยยย
+                                ยิ้ม
+                                สนุก
+                            </div>
+                            <div class="panel-footer">จากผู้ใช้ : <a href="">หมีแพนด้า</a> โพสเมื่อ : 12/05/2015 เวลา : 1.18 </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">ความเห็นที่ 2</h3>
+                            </div>
+                            <div class="panel-body">
+                                สนุกจุงเบยยยยยยยยย
+                                ยิ้ม
+                                สนุก
+                            </div>
+                            <div class="panel-footer">จากผู้ใช้ : <a href="">หมีแพนด้า</a> โพสเมื่อ : 12/05/2015 เวลา : 1.18 </div>
+                        </div>
+                        <!--/Box comment-->
+                        
+                    </div>
+                    <!--/Review--> </div>
+                <!--Content-->
+                <!--page button--> </div>
+        </div>
+    </div>
+    <!--/container-->
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">Place sticky footer content here.</p>
+        </div>
+    </footer>
+    <!--Foooter-->
+
+</body>
+</html>
